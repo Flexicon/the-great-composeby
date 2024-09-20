@@ -4,6 +4,10 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
+<svelte:head>
+	<title>The Great Composeby</title>
+</svelte:head>
+
 <section class="container mx-auto px-4 py-20 text-center">
 	<h1 class="text-5xl md:text-7xl max-w-3xl mx-auto font-bold mb-8 font-playfair-display">
 		Compose your local stack in <span class="highlight">Style</span>
@@ -22,7 +26,8 @@
 
 	<p class="text-xl mb-8 max-w-xl mx-auto">
 		Never scour the web on how to set up a Redis container again — let
-		<span class="highlight">The Great Composeby</span> set up the essentials so you can focus on the main act.
+		<span class="highlight">The Great Composeby</span> set up the essentials so you can focus on the
+		main act.
 	</p>
 
 	<div class="flex justify-center space-x-4">
