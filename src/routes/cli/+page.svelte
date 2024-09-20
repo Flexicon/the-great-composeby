@@ -10,8 +10,8 @@
 		<h2 class="text-2xl font-semibold">Installation</h2>
 
 		<div class="mt-3 mb-6">
-			<ul class="list-disc list-inside">
-				<li class="mb-2">
+			<ul>
+				<li>
 					Via <a href="https://brew.sh/">Homebrew</a>:
 					<code class="cmd">brew tap flexicon/tap && brew install tgc</code>
 				</li>
