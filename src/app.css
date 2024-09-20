@@ -18,3 +18,17 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
+
+main a {
+	@apply text-yellow-500 underline hover:no-underline hover:text-yellow-600;
+}
+
+code {
+	@apply bg-gray-800 text-white rounded-md px-2 py-0.5;
+	user-select: all;
+}
+
+code.cmd::before {
+	content: '$ ';
+	@apply text-teal-300;
+}

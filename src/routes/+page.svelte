@@ -10,7 +10,7 @@
 	</h1>
 
 	<p class="text-xl mb-3 max-w-xl mx-auto">
-		From Postgres to LocalStack, our tool
+		From Postgres to Kafka, our tool
 		<span class="highlight">simplifies your workflow</span> so you can sit back and enjoy the glitz and
 		glamour of the limelight.
 	</p>
@@ -21,8 +21,8 @@
 	</p>
 
 	<p class="text-xl mb-8 max-w-xl mx-auto">
-		Never scour the web on how to set up a <span class="highlight">Redis</span> container again — let
-		our tool set up the essentials so you can focus on the main act.
+		Never scour the web on how to set up a Redis container again — let
+		<span class="highlight">The Great Composeby</span> set up the essentials so you can focus on the main act.
 	</p>
 
 	<div class="flex justify-center space-x-4">
@@ -30,7 +30,7 @@
 			<Wine class="h-[1em] w-[1em] mr-1" />
 			Try it out!
 		</Button>
-		<Button variant="outline">Get the CLI</Button>
+		<Button href="/cli" variant="outline">Get the CLI</Button>
 	</div>
 </section>
 
