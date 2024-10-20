@@ -16,7 +16,15 @@
     "name": "MariaDB"
   },
   {
+    "id": "mongodb",
+    "name": "MongoDB"
+  },
+  {
     "id": "mailpit",
     "name": "Mailpit"
+  },
+  {
+    "id": "apachekafka",
+    "name": "Apache Kafka"
   }
 ]
