@@ -1,0 +1,22 @@
+[
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL"
+  },
+  {
+    "id": "redis",
+    "name": "Redis"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL"
+  },
+  {
+    "id": "mariadb",
+    "name": "MariaDB"
+  },
+  {
+    "id": "mailpit",
+    "name": "Mailpit"
+  }
+]

@@ -19,7 +19,7 @@ body {
 	font-style: normal;
 }
 
-main a {
+main a:not(.btn) {
 	@apply text-yellow-500 underline hover:no-underline hover:text-yellow-600;
 }
 

@@ -3,7 +3,7 @@
 	export let href: string | undefined = undefined;
 </script>
 
-{#if href}
+{#if href && !$$props.disabled}
 	<a class={`btn variant-${variant}`} {href} {...$$restProps}>
 		<slot />
 	</a>

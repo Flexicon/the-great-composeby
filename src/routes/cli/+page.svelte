@@ -2,7 +2,7 @@
 	<title>Get the CLI - TGC</title>
 </svelte:head>
 
-<section class="container mx-auto px-8 py-12">
+<section class="container mx-auto py-10">
 	<h1 class="text-3xl font-semibold">Get the CLI</h1>
 
 	<div class="max-w-3xl">

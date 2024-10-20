@@ -31,9 +31,9 @@
 	</p>
 
 	<div class="flex justify-center space-x-4">
-		<Button>
+		<Button href="/generate">
 			<Wine class="h-[1em] w-[1em] mr-1" />
-			Try it out!
+			Start Composing
 		</Button>
 		<Button href="/cli" variant="outline">Get the CLI</Button>
 	</div>
