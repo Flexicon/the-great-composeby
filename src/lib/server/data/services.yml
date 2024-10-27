@@ -1,4 +1,4 @@
-- id: postgresql
+postgresql:
   name: PostgreSQL
   containers:
     postgres:
@@ -11,7 +11,7 @@
       ports:
         - 5432:5432
 
-- id: redis
+redis:
   name: Redis
   containers:
     redis:
@@ -20,10 +20,10 @@
       ports:
         - 6379:6379
 
-- id: mysql
+mysql:
   name: MySQL
 
-- id: mariadb
+mariadb:
   name: MariaDB
   containers:
     mariadb:
@@ -37,10 +37,10 @@
       ports:
         - 3306:3306
 
-- id: mongodb
+mongodb:
   name: MongoDB
 
-- id: mailpit
+mailpit:
   name: Mailpit
   containers:
     mailpit:
@@ -53,5 +53,5 @@
         - 1080:1080
         - 8025:8025
 
-- id: apachekafka
+apachekafka:
   name: Apache Kafka

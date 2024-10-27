@@ -1,7 +1,8 @@
-import services from '$lib/server/data/services.yml';
-import type { Service } from '$lib/types/service.interface';
+import { getServices } from '$lib/server/data/services';
 import type { PageServerLoad } from './$types';
 
+const services = getServices();
+
 export const load = (async () => {
-	return { services: services as Service[] };
+	return { services };
 }) satisfies PageServerLoad;
