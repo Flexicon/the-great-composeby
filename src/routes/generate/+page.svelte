@@ -5,8 +5,10 @@
 	import Button from '$lib/components/Button.svelte';
 	import ServicesSelector from '$lib/components/ServicesSelector.svelte';
 	import type { Service } from '$lib/types/service.interface';
+	import type { PageData } from './$types';
 
-	import services from './services.yml';
+	export let data: PageData;
+	const { services } = data;
 
 	const selectedServices: Record<string, Service | undefined> = {};
 
