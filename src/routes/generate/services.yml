@@ -1,0 +1,57 @@
+- id: postgresql
+  name: PostgreSQL
+  containers:
+    postgres:
+      image: postgres:alpine
+      restart: unless-stopped
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: dev
+        POSTGRES_DB: dev
+      ports:
+        - 5432:5432
+
+- id: redis
+  name: Redis
+  containers:
+    redis:
+      image: redis:alpine
+      restart: unless-stopped
+      ports:
+        - 6379:6379
+
+- id: mysql
+  name: MySQL
+
+- id: mariadb
+  name: MariaDB
+  containers:
+    mariadb:
+      image: mariadb
+      restart: unless-stopped
+      environment:
+        - MARIADB_USER=mariadb
+        - MARIADB_PASSWORD=dev
+        - MARIADB_ROOT_PASSWORD=dev
+        - MARIADB_DATABASE=dev
+      ports:
+        - 3306:3306
+
+- id: mongodb
+  name: MongoDB
+
+- id: mailpit
+  name: Mailpit
+  containers:
+    mailpit:
+      image: axllent/mailpit
+      container_name: mailpit
+      restart: unless-stopped
+      environment:
+        MP_MAX_MESSAGES: 5000
+      ports:
+        - 1080:1080
+        - 8025:8025
+
+- id: apachekafka
+  name: Apache Kafka

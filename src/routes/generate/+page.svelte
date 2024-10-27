@@ -6,7 +6,7 @@
 	import ServicesSelector from '$lib/components/ServicesSelector.svelte';
 	import type { Service } from '$lib/types/service.interface';
 
-	import services from './services.json';
+	import services from './services.yml';
 
 	const selectedServices: Record<string, Service | undefined> = {};
 
