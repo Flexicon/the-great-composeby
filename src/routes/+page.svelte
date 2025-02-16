@@ -14,14 +14,8 @@
 	</h1>
 
 	<p class="text-xl mb-3 max-w-xl mx-auto">
-		From Postgres to Kafka, our tool
-		<span class="highlight">simplifies your workflow</span> so you can sit back and enjoy the glitz and
-		glamour of the limelight.
-	</p>
-
-	<p class="text-xl mb-3 max-w-xl mx-auto">
-		Turn your dev stack into a masterpiece — crafted with ease, deployed with
-		<span class="highlight">style</span>.
+		From Postgres to Kafka, streamline your local development environment and get up and running in
+		minutes.
 	</p>
 
 	<p class="text-xl mb-8 max-w-xl mx-auto">
