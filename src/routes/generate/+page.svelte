@@ -10,13 +10,18 @@
 	export let data: PageData;
 	const { services } = data;
 
-	const selectedServices: Record<string, Service | undefined> = {};
+	let selectedServices: string[] = [];
 
-	$: canGenerate = Object.values(selectedServices).filter(Boolean).length > 0;
+	$: canGenerate = selectedServices.length > 0;
+	$: generationURL = `/generate/compose?services=${selectedServices.join(',')}`;
 
 	const onServiceChange = (e: { detail: { service: Service; selected: boolean } }) => {
 		const { service, selected } = e.detail;
-		selectedServices[service.id] = selected ? service : undefined;
+		if (selected) {
+			selectedServices = [...selectedServices, service.id];
+		} else {
+			selectedServices = selectedServices.filter((name) => name !== service.id);
+		}
 	};
 </script>
 
@@ -36,7 +41,11 @@
 		</div>
 
 		<div class="flex space-x-2 mt-4">
-			<Button disabled={!canGenerate} variant={canGenerate ? 'primary' : 'outline'}>
+			<Button
+				href={generationURL}
+				disabled={!canGenerate}
+				variant={canGenerate ? 'primary' : 'outline'}
+			>
 				{#if canGenerate}
 					<ZapIcon class="h-[1em] w-[1em] mr-1" />
 					Generate Compose file
