@@ -8,7 +8,7 @@
 		<slot />
 	</a>
 {:else}
-	<button class={`btn variant-${variant}`} {...$$restProps}>
+	<button class={`btn variant-${variant}`} on:click {...$$restProps}>
 		<slot />
 	</button>
 {/if}
